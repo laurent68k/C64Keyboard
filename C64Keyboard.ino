@@ -13,17 +13,18 @@
     Windows: Serial port: COM7, or...COM5 depend of the board
 */
 
-//  C64 KeyBoard            Arduino Pro Micro      				Socket 24 pins
-//  Pin           			Pin logical (Not DIL socket)
+//  C64 KeyBoard Pins       Arduino Pro Micro      		
+//  Pin           			Pin logical (Not DIL socket number)
+//
 //  (Rows=)			
 //			
-//   20           			2 - SDA
-//   19           			3 - SCL
-//   18           			4 - A6
-//   17           			5
-//   16           			6 - A7
+//   20           			2 - SDA 
+//   19           			3 - SCL 
+//   18           			4 - A6  
+//   17           			5       
+//   16           			6 - A7                                
 //   15           			7 -
-//   14           			8 - A8
+//   14           			8 - A8                                
 //   13           			9 - A9
 
 //  (Columns)
@@ -86,7 +87,7 @@ typedef struct {
 
 KeyCharMap keysCharMap[KEYS_COUNT] = {
 
-    // Std          Shifted         Ctrl
+    // Std          Shifted         Ctrl            Shifted+Ctrl
     {K_DEL,         K_DEL,          K_NULL,         K_NULL},                    //  0-  INST DEL 	
     {K_RET,         K_NULL,         K_NULL,         K_NULL},                    //  1-  RETURN 	
     {K_NULL,        K_NULL,         K_NULL,         K_NULL},                    //  2-  CURSOR LEFT/RIGHT

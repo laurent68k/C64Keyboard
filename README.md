@@ -2,6 +2,10 @@
 
 This project allows you to use a real Commodore 64 keyboard as an extended ASCII keyboard via an Arduino Pro Micro (Leonardo compatible). It scans the C64 keyboard matrix and sends keypresses as ASCII characters over USB serial or enhanced ASCI code beyond the 0x80 value.
 
+## Goal
+
+The goal is to have a cheap solution with a very good and easy-to-use keyboard for any SBC project. Since the C64 is ultimately a simple matrix, we can easily do what we want.
+
 ## Features
 
 - Supports standard, shifted, control and shifted+control key mappings
