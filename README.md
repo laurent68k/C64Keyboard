@@ -1,6 +1,9 @@
 # Commodore 64 Keyboard Adapter
 
-This project allows you to use a real Commodore 64 keyboard as an extended ASCII keyboard via an Arduino Pro Micro (Leonardo compatible). It scans the C64 keyboard matrix and sends keypresses as ASCII characters over USB serial or enhanced ASCI code beyond the 0x80 value.
+This project allows you to use a real Commodore 64 keyboard as an extended ASCII keyboard via an Arduino Pro Micro (Leonardo compatible). It scans the C64 keyboard matrix and sends keypresses as ASCII characters or enhanced ASCII code beyond the 0x80 value over USB serial at 115200 bauds. 
+While debuging the USB serial is used with Arduino Studio, while we will use the TxD/RxD TTL line to interface any SBC project.
+
+My goal is to interface this kayboard/Arduino to a 68B50 UART. 
 
 ## Goal
 
